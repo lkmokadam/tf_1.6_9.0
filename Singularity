@@ -14,7 +14,7 @@ From: nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 
 %post
   apt update 
-  apt-get install -y python-pip mpich
+  apt-get install -y python-pip mpich wget
   pip install mpi4py
   pip install --no-cache-dir tensorflow-gpu
 
