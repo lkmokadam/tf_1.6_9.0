@@ -16,7 +16,7 @@ From: nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
   apt update 
   apt-get install -y python-pip mpich
   pip install mpi4py
-  pip install tensorflow-gpu
+  pip install --no-cache-dir tensorflow-gpu
 
   # Patch container to work on Titan
   wget https://raw.githubusercontent.com/olcf/SingularityTools/master/Titan/TitanBootstrap.sh
