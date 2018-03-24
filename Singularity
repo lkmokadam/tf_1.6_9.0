@@ -13,7 +13,7 @@ From: nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
   export LD_LIBRARY_PATH=${LD_LIBRARY_PATH-}:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64
 
 %post
-  apt update
+  apt update 
   apt-get install -y python-pip mpich
   pip install mpi4py
   pip install tensorflow-gpu
